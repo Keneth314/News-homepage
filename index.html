@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech News</title>
+    <title>News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
-    <!---------------- Header ------------->
-    <header>
-        <img src="" alt="">
+    <div class="main-container">
+        <!---------------- Header ------------->
+        <header>
+            <img src="assets/images/logo.svg" alt="Logo de Tecch News">
 
-        <div>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">New</a></li>
@@ -24,80 +24,90 @@
                 <li><a href="">Trending</a></li>
                 <li><a href="">Categories</a></li>
             </ul>
-        </div>
 
 
+        </header>
 
-    </header>
+        <!---------------- Main ------------->
+        <main>
+            <article>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                    <img src="assets/images/image-web-3-mobile.jpg" alt="" id="random">
+                </picture>
+                <div class="article-description">
+                    <h2>The Bright Future of Web 3.0?</h2>
 
-    <!---------------- Main ------------->
-    <main>
-        <article>
-            <img src="" alt="">
-            <div>
-                <h2>The Bright Future of Web 3.0?</h2>
+                    <div>
+                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back
+                            into the hands of the people. But is it really fulfilling its promise?</p>
+
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </article>
+
+            <aside>
+                <h3>New</h3>
+                <div>
+                    <h4>Hydrogen VS Electric Cars</h4>
+                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </div>
 
                 <div>
-                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back
-                        into the hands of the people. But is it really fulfilling its promise?</p>
+                    <h4>The Downsides of Al Artistry</h4>
+                    <p>What are the possible adverse effects of on-demand Al image generation?</p>
+                </div>
 
-                    <button>READ MORE</button>
+                <div>
+                    <h4>Is VC Funding Drying Up? </h4>
+                    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                </div>
+            </aside>
+        </main>
+
+        <!---------------- Section ------------->
+        <section>
+            <div>
+                <img src="assets/images/image-retro-pcs.jpg" alt="Image retro PCs">
+                <div class="section-description">
+                    <p class="news-number">01</p>
+                    <a href="" class="news-title">Reviving Retro PCs</a>
+                    <p class="news-description">What happens when old PCs are given modern upgrades?</p>
                 </div>
             </div>
-        </article>
-
-        <aside>
-            <h3>New</h3>
             <div>
-                <h4>Hydrogen VS Electric Cars</h4>
-                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <img src="assets/images/image-top-laptops.jpg" alt="Image top laptops">
+                <div class="section-description">
+                    <p class="news-number">02</p>
+                    <a href="" class="news-title">Top 10 Laptops of 2022</a>
+                    <p class="news-description">Our best picks for various needs and budgets.</p>
+                </div>
             </div>
-
             <div>
-                <h4>The Downsides of Al Artistry</h4>
-                <p>What are the possible adverse effects of on-demand Al image generation?</p>
+                <img src="assets/images/image-gaming-growth.jpg" alt="Image gaming growth">
+                <div class="section-description">
+                    <p class="news-number">03</p>
+                    <a href="" class="news-title">The Growth of Gaming</a>
+                    <p class="news-description">How the pandemic has sparked fresh opportunities.</p>
+                </div>
             </div>
+            
+        </section>
 
-            <div>
-                <h4>Is VC Funding Drying Up? </h4>
-                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-            </div>
 
-            <!-- <div>
-                <h4></h4>
-                <p></p>
-            </div> -->
-        </aside>
-    </main>
-
-    <!---------------- Aside ------------->
-    <aside>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p>01</p>
-                <p>Reviving Retro PCs </p>
-                <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
-        </div>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p>02</p>
-                <p>Top 10 Laptops of 2022 </p>
-                <p>Our best picks for various needs and budgets.</p>
-            </div>
-        </div>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p>03</p>
-                <p>The Growth of Gaming </p>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-        </div>
-    </aside>
-
+        <footer>
+            <p>Challenge by <span><a href="https://www.frontendmentor.io/">Frontend Mentor</a></span> Code by <span><a
+                        href="https://github.com/Keneth314">Keneth Lopez</a></span></p>
+        </footer>
+    </div>
+    
+    <script>
+        // if(window.innerWidth <= 600){
+        //     const img = document.querySelector("#random")
+        //     img.src="assets/images/descarga.jpeg"
+        // }
+    </script>
 
 </body>
 

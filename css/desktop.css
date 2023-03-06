@@ -24,12 +24,372 @@ html{
 
 body{
     font-family: var(--principal-font);
+    color: var(--very-dark-blue);
     font-weight: 400;
     font-size: 1.5rem;
 }
 
 
+/* ************ HEADER ************ */
 
+header{
+    width: 70vw;
+    max-width: 1008px;
+    margin: 0 auto;
+    /* ---------------------- */
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    width: 60px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul li{
+    margin-left: 30px;
+}
+
+header ul a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+header ul a:hover{
+    user-select: none;
+    color: var(--secondary-color);
+}
+
+
+/* ************ MAIN ************ */
+
+main{
+    width: 70vw;
+    max-width: 1008px;
+    margin: 0 auto;
+    /* ------------------------ */
+    margin-top: 50px;
+    display: flex;
+}
+
+article{
+    width: 68%;
+    height: 100%;
+    padding-right: 26px;
+    display: flex;
+    flex-direction: column;
+
+    /* align-content: space-evenly; */
+
+}
+
+article img{
+    width: 100%
+}
+
+.article-description{
+    display: flex;
+    margin-top: 25px;
+}
+
+.article-description h2{
+    width: 50%;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.article-description div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-description div p{
+    color: var(--dark-grayish-blue);
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+.article-description div button{
+    width: 160px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: var(--secondary-color);
+    padding: 13px 0;
+    border: none;
+}
+.article-description div button:hover{
+    user-select: none;
+    cursor: pointer;
+    background-color: black;
+}
+
+aside{
+    width: 32%;
+    /* max-height: 446px;
+    height: 30vw; */
+    background-color: var(--very-dark-blue);
+    padding: 25px 25px;
+}
+/* 1487 */
+aside h3{
+    color: var(--primary-color);
+    font-size: 3.1rem;
+    margin-bottom: 10px;
+}
+
+aside div h4{
+    color: var(--Off-white);
+    margin-top: 22px;
+    font-size: 1.7rem;
+}
+aside div h4:hover{
+    user-select: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+aside div p{
+    color: var(--grayish-blue);
+    color: rgba(197, 198, 206, 0.8);
+    /* color: var(--dark-grayish-blue); */
+    /* --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%); */
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 23px;
+}
+
+aside div:nth-child(2) p, aside div:nth-child(3) p{
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--dark-grayish-blue);
+
+}
+
+section{
+    width: 70vw;
+    max-width: 1008px;
+    margin: 0 auto;
+    /* ------------------------ */
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section div{
+    width: 290px;
+    height: 100px;
+    /* margin-right: 15px; */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+section div img{
+    width: 100px;
+    margin-right: 20px;
+    /* height: 100px; */
+}
+
+.section-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: calc(100% - 120px - 20px) */
+}
+
+.section-description .news-number{
+    color: var(--grayish-blue);
+    font-size: 2.4rem;
+    font-weight: 700;
+    
+}
+.section-description .news-title{
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+.section-description .news-title:hover{
+    user-select: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+
+}
+
+.section-description .news-description{
+    color: var(--dark-grayish-blue);
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+footer p{
+    /* width: 70vw; */
+    /* max-width: 1008px; */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 500;
+}
+footer a{
+    color: var(--dark-grayish-blue);
+}
+footer a:hover{
+    user-select: none;
+    color: var(--secondary-color);
+}
 
 /* - Mobile: 375px
 - Desktop: 1440px */
+
+
+
+/* .main-container{
+    width: calc(70vw + 100px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.5);
+} */
+
+
+
+@media (max-width: 1242px){
+    section div{
+        width: 50%;
+    }
+    .section-description{
+        width: calc(100% - 120px - 20px)
+    }
+
+    .article-description{
+        flex-direction: column;
+    }
+    .article-description h2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .article-description div{
+        width: 100%;
+    }
+    .article-description div p{
+        margin-bottom: 15px;
+    }
+
+    article{
+        width: 60%;
+    }
+
+    aside{
+        width: 40%;
+    }
+
+
+}
+
+@media (max-width: 1024px){
+
+    header, main, section{
+        width: 80vw;
+    }
+
+    .article-description h2{
+        font-size: 3.5rem;
+        line-height: 40px;
+    }
+
+    article{
+        width: 50%;
+    }
+    article img{
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .article-description div p{
+        font-size: 1.3rem;
+    }
+
+    aside{
+        width: 50%;
+    }
+    aside h3{
+        font-size: 2.5rem;
+    }
+    aside div h4{
+        font-size: 1.4rem;
+    }
+    aside div p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    header, main, section{
+        /* width: calc(100vw - 20px); */
+    }
+    section div{
+        width: 100%;
+    }
+    .section-description{
+        width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 600px){
+    header ul{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    article{
+        width: 100%;
+        padding: 0;
+    }
+    article img{
+        height: 250px;        
+    }
+
+    aside{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    section div{
+        width: 100%;
+    }
+
+    section div img{
+        /* background-image: url("../assets/images/descarga.jpeg"); */
+        /* border: solid 5px blue; */
+    }
+
+}
+
+
+@media (max-width: 425px){
+    header, main, section, footer{
+        width: calc(100vw - 40px);
+    }
+
+    footer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
